@@ -47,7 +47,7 @@ and open the template in the editor.
         <div class="container-fluid">
             <nav class='navbar navbar-expand-sm bg-light navbar-dark shadow-sm'>
                 <span class='pr-4'><small><?php echo date('l, d F Y'); ?></small></span>
-                <p class='m-0 bg-danger p-2 text-white'><small>Latest Update</small></p>
+                <p class='m-0 bg-danger p-2 text-white'><small>Latest Updates</small></p>
                 <p class='m-0 p-2'><small>You can now check Nominal Rows on the Personnels Page</small></p>
                 <?php if(empty($_SESSION['name'])){ ?>
                 <a href="pages/user_login.php" class='btn btn-outline-danger ml-auto' role="button">Log In</a>
