@@ -63,7 +63,7 @@ and open the template in the editor.
                         $result = $conn->query($query);
                         if(!$result) die($conn->error);
                         
-                        header('Location: http://localhost/CSMS/index.php');
+                        header('Location: https://ohos-csms.herokuapp.com/index.php');
                         exit();
                     }
                     else{

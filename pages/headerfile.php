@@ -24,7 +24,7 @@ and open the template in the editor.
             
             if (empty($_SESSION['name'])){
                 echo "<div id='dialog' title='Login Required'><p>You need to be Logged In to view this page</p></div>";
-                header('Refresh: 4; Url= http://localhost/CSMS/pages/user_login.php');
+                header('Refresh: 4; Url= https://ohos-csms.herokuapp.com/pages/user_login.php');
                 exit();
             }
         ?>
@@ -32,7 +32,7 @@ and open the template in the editor.
             function restrict($i){
                 if($_SESSION['level'] < $i){
                     echo '<script>alert("You are not authorised to view this page, please contact the admin")</script>';
-                    header('Refresh: 0.1; Url= http://localhost/CSMS/index.php');
+                    header('Refresh: 0.1; Url= https://ohos-csms.herokuapp.com/index.php');
                     exit();
                 }
             }
